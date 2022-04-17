@@ -1,0 +1,91 @@
+@import "https://use.fontawesome.com/releases/v5.13.0/css/all.css";
+
+
+.container 
+{
+    width: 140px;
+    height: 130px;
+     display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 20px;
+    box-shadow: 1px 0 10px 10px rgb(0 0 0 / 3%);
+    border-radius: 30px;
+    user-select: none; 
+}
+.switch
+{
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 15px;
+    margin-top: 20px;
+  
+}
+.switch input 
+{
+    display: none;
+}
+.slider 
+{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ccc;
+    border-radius: 34px;
+    transition: .4s;
+}
+.slider::before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 2px;
+    bottom: 2px;
+    background: #fff;
+    border-radius: 50%;
+    transition: .4s;
+}
+input:checked + .slider 
+{
+    background: #8449ff;
+} 
+input:checked + .slider::before 
+{
+     transform: translateX(13px); 
+}
+.dark-mode 
+{
+    background: linear-gradient(to right,#84469b,#563996);
+    color:white;
+}
+.fa{
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    display: block;
+    padding: 5px 0px 0px 5px;
+    color: #5f2076;/*//,#563996)*/
+    font-size: 22px;
+}
+.dieuhoa{
+    display: flex;
+}
+.chu{
+    margin-top: 70px;   
+}
+
+
+
+
+
+
+
+
+
+
+
+
